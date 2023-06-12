@@ -11,20 +11,20 @@ public class WebSocketHandler extends TextWebSocketHandler {
 
 	@Override
 	public void afterConnectionEstablished(WebSocketSession session) throws Exception {
-		super.afterConnectionEstablished(session);
 		System.out.println("afterConnectionEstablished session id: " + session.getId());
+		super.afterConnectionEstablished(session);
 	}
 
 	@Override
 	protected void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
-		super.handleTextMessage(session, message);
 		System.out.println("handleTextMessage session id: " + session.getId());
+		super.handleTextMessage(session, message);
 	}
 
 	@Override
 	public void afterConnectionClosed(WebSocketSession session, CloseStatus status) throws Exception {
-		super.afterConnectionClosed(session, status);
 		System.out.println("afterConnectionClosed session id: " + session.getId());
+		super.afterConnectionClosed(session, status);
 	}
 
 }
