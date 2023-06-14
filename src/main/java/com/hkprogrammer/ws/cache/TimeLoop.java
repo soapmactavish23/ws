@@ -22,7 +22,7 @@ public class TimeLoop {
 				String simple = stringGenerator.buildSimpleString();
 				String cached = stringGenerator.buildCachedString();
 				
-				System.out.println("Simple: " + simple + ", cached: " + cached);
+				//System.out.println("Simple: " + simple + ", cached: " + cached);
 			}
 		}, 2000L, 2000L);
 	}
