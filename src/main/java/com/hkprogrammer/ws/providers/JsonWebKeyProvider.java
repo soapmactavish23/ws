@@ -5,10 +5,12 @@ import java.security.PublicKey;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.stereotype.Component;
 
 import com.auth0.jwk.Jwk;
 import com.auth0.jwk.UrlJwkProvider;
 
+@Component
 public class JsonWebKeyProvider implements KeyProvider {
 
 	private final UrlJwkProvider provider;
