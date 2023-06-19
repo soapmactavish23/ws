@@ -14,14 +14,6 @@ public class WebSocketConfig implements WebSocketConfigurer {
 
 	@Autowired
 	private WebSocketHandler webSocketHandler;
-	
-//	@Bean
-//    public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory connectionFactory) {
-//        RedisTemplate<String, Object> redisTemplate = new RedisTemplate<>();
-//        redisTemplate.setConnectionFactory(connectionFactory);
-//        redisTemplate.setValueSerializer(new GenericToStringSerializer<>(Object.class));
-//        return redisTemplate;
-//    }
 
 	@Override
 	public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
